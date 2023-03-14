@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body onload="hide()">
+    <div class="container">
+
+        <div class="button">
+
+            <button class="circle" id="circle" onclick="circleClick()">
+                Circle
+            </button>
+
+            <button class="Square" id="Square" onclick="squareClick()">
+                Square
+            </button>
+
+            <button class="Rectangle" id="Rectangle" onclick="rectangleClick()">
+                Rectangle
+            </button>
+
+        </div>
+        <div class="shape">
+            <img src="/images/Circle.png" class="circlePic" id="circlePic" alt="Circle">
+            <img src="/images/Square.png" class="squarePic" id="squarePic" alt="Suare">
+            <img src="/images/Rectangle.png" class="rectanglePic" id="rectanglePic" alt="Rectangle">
+        </div>
+        <div class="parameters">
+
+            <label class="widthLabel" id="widthLabel">Width</label>
+            <input type="number" class="Width" id="Width" placeholder="Width">
+
+            <label class="heightLabel" id="heightLabel">Height</label>
+            <input type="number" class="Height" id="Height" placeholder="Height">
+
+            <label class="breadthLabel" id="breadthLabel">Breadth</label>
+            <input type="number" class="Breadth" id="Breadth" placeholder="Breadth">
+
+            <label class="radiusLabel" id="radiusLabel">Radius</label>
+            <input type="number" class="Radius" id="Radius" placeholder="radius">
+
+        </div>
+        <div class="submit" onclick="calculateArea()">
+            <button class="submit" id="submit">submit</button>
+        </div>
+        <div class="output">
+            <p id="msg">
+
+            </p>
+        </div>
+    </div>
+</body>
+</html>
